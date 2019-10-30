@@ -1,6 +1,9 @@
 # Slacker
 A hook based reporter for behave
 
+## TODOs
+* support for `decorators`
+* commandline argument support
 ## Usage
 ```python
 # -- FILE:features/environment.py
