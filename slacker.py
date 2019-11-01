@@ -35,8 +35,8 @@ class Slacker:
             'fallback': f'Scenario: {scenario.name}',
             'color': '#36a64f' if scenario.status == 'passed' else '#e01e5a',
             'pretext': scenario.feature.name,
-            'author_name': 'Slacker',
-            'title': scenario.name,
+            'author_name': scenario.name,
+            'title': scenario.status,
             'text': f'runtime: {scenario.duration}  status: {scenario.status}',
             'ts': time.time()
         }
