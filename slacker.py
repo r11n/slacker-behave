@@ -21,10 +21,11 @@ class Slacker:
             else:
                 failed += 1
             self.slack_data.append(self.slackify(i))
+        summary = f'\n*total*:{len(self.scenarios)}\n*passed*:{passed}\n*failed*:{failed}\n'
         requests.post(
             self.webhook,
             data=json.dumps({
-                'text': f'Automation report\n*passed*:{passed}\n*failed*:{failed}\ndetailed Report:',
+                'text': f'Automation report{summary}detailed Report:',
                 'attachments': self.slack_data
             }),
             headers={'Content-Type': 'application/json'}
