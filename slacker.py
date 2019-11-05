@@ -38,6 +38,6 @@ class Slacker:
             'pretext': scenario.feature.name,
             'author_name': scenario.name,
             'title': scenario.status.name,
-            'text': f'runtime: {scenario.duration}  status: {scenario.status.name}',
+            'text': f'runtime: {round(scenario.duration)}S  status: {scenario.status.name}',
             'ts': time.time()
         }
