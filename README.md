@@ -25,9 +25,9 @@ Make sure you import `Scenario` and `Feature` from the `scenario.py`
 # -- FILE:test.py
 import os
 from slacker import Slacker
-from scenario import Feature, Scenario
+from scenario import Feature, Status, Scenario
 
-slacker = Slacker(os.environ('SLACK_WEBHOOK_URL'))
+slacker = Slacker(os.environ['SLACK_WEBHOOK_URL'])
 slacker.store(Scenario('scene1', 'passed', 'feature1', 10))
 slacker.store(Scenario('scene2', 'passed', 'feature1', 10))
 slacker.store(Scenario('scene3', 'failed', 'feature1', 10))
