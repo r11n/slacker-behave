@@ -8,7 +8,7 @@ A hook based reporter for behave
 ```python
 # -- FILE:features/environment.py
 import os
-import slacker import Slacker
+import slacker-behave import Slacker
 def before_all(context):
     context.slacker = Slacker(os.environ('SLACK_WEBHOOK_URL'))
     # do your actions
@@ -24,8 +24,8 @@ Make sure you import `Scenario` and `Feature` from the `scenario.py`
 ```python
 # -- FILE:test.py
 import os
-from slacker import Slacker
-from scenario import SFeature, SStatus, SScenario
+from slacker-behave import Slacker
+from slacker-behave import SFeature, SStatus, SScenario
 
 slacker = Slacker(os.environ['SLACK_WEBHOOK_URL'])
 slacker.store(SScenario('scene1', 'passed', 'feature1', 10))
