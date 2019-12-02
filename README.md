@@ -25,13 +25,13 @@ Make sure you import `Scenario` and `Feature` from the `scenario.py`
 # -- FILE:test.py
 import os
 from slacker import Slacker
-from scenario import Feature, Status, Scenario
+from scenario import SFeature, SStatus, SScenario
 
 slacker = Slacker(os.environ['SLACK_WEBHOOK_URL'])
-slacker.store(Scenario('scene1', 'passed', 'feature1', 10))
-slacker.store(Scenario('scene2', 'passed', 'feature1', 10))
-slacker.store(Scenario('scene3', 'failed', 'feature1', 10))
-slacker.store(Scenario('scene1', 'passed', 'feature2', 10))
+slacker.store(SScenario('scene1', 'passed', 'feature1', 10))
+slacker.store(SScenario('scene2', 'passed', 'feature1', 10))
+slacker.store(SScenario('scene3', 'failed', 'feature1', 10))
+slacker.store(SScenario('scene1', 'passed', 'feature2', 10))
 slacker.generate()
 # should generate a report and send to it corresponding channel or chat in webhook url
 # report will look similar to following comments

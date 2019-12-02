@@ -1,10 +1,6 @@
 import requests
 import json
 import time
-​
-​
-
-
 class Slacker:
     def __init__(self, webhook):
         self.scenarios = []

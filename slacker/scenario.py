@@ -1,14 +1,14 @@
-class Feature():
+class SFeature():
     def __init__(self, name):
         self.name = name
 
-class Status():
+class SStatus():
     def __init__(self, name):
         self.name = name
 
-class Scenario():
+class SScenario():
     def __init__(self, name, status, feature, duration):
         self.name = name
-        self.feature = Feature(feature)
-        self.status = Status(status)
+        self.feature = SFeature(feature)
+        self.status = SStatus(status)
         self.duration = duration
