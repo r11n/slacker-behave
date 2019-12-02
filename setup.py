@@ -8,7 +8,7 @@ setup(
     author = 'raghavendranekkanti',
     author_email = 'raghavendra.nekkanti@inmar.com',
     url = 'https://github.com/raghavendranekkanti/slacker-behave',
-    download_url = 'https://github.com/raghavendranekkanti/slacker-behave/archive/v_01.tar.gz',
+    download_url = 'https://github.com/raghavendranekkanti/slacker-behave/archive/0.0.1.tar.gz',
     keywords = ['slack-webhook', 'behave-reports', 'reports', 'behave', 'slack'],
     install_requires = [
         'requests'
