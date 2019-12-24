@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
     name = 'slackerbehave',
     packages = ['slackerbehave'],
-    version = '0.0.5',
+    version = '0.0.6',
     license = 'MIT',
     description = 'A slack report generator for behave using the behave hooks',
     author = 'raghavendranekkanti',
     author_email = 'raghavendra.nekkanti@inmar.com',
     url = 'https://github.com/raghavendranekkanti/slacker-behave',
-    download_url = 'https://github.com/raghavendranekkanti/slacker-behave/archive/0.0.5.tar.gz',
+    download_url = 'https://github.com/raghavendranekkanti/slacker-behave/archive/0.0.6.tar.gz',
     keywords = ['slack-webhook', 'behave-reports', 'reports', 'behave', 'slack'],
     install_requires = [
         'requests'
